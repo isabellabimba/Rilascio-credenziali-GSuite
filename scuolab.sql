@@ -15,14 +15,14 @@ START TRANSACTION;
 
 -- create tables
 CREATE TABLE Dati (
-	Cognome1 CHAR(50) NOT NULL ,
-  Nome1 CHAR(50) NOT NULL ,
+	Cognome CHAR(50) NOT NULL ,
+  	Nome CHAR(50) NOT NULL ,
 	Classe CHAR(50) NOT NULL ,
 	Sezione CHAR(5) NOT NULL,
-  Anno INTEGER NOT NULL,
-  Gruppo CHAR(10) NOT NULL,
-  Email CHAR(100) NOT NULL,
-  Password CHAR(50) NOT NULL,
+  	Anno INTEGER NOT NULL,
+  	Gruppo CHAR(10) NOT NULL,
+  	Email CHAR(100) NOT NULL,
+  	Password CHAR(50) NOT NULL,
 	PRIMARY KEY (Nome1, Cognome1, Email, Password)
 );
 
@@ -31,7 +31,7 @@ CREATE TABLE Fine(
 	Scuola_Classe CHAR(70) NOT NULL,
 	Cognome2 CHAR(50) NOT NULL,
 	Nome2 CHAR(50) NOT NULL,
-  CodFisc CHAR(50) NOT NULL,
+  	CodFisc CHAR(50) NOT NULL,
 	CodiceStud CHAR(15) NOT NULL,
 	PRIMARY KEY (Nome2, Cognome2, CodFisc, CodiceStud)
 );
